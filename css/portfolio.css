@@ -3,32 +3,69 @@
 } */
 
 .jumbotron {
-  min-height:40em;
   text-align: center;
   margin: 0;
 }
 
+.banner{
+  display: flex;
+  flex-basis:80%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.banner h1{
+  display: flex;
+  flex-basis:100%;
+  justify-content: center;
+}
+
 .about-container{
   background-color: #e5ceb0;
-  height: 50em;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  height:700px;
 }
 
 #about-me{
-  float: right;
-  width: 30em;
-  margin-top: 10em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
+
 #profile-pic{
-  height:30em;
-  width:auto;
+  display: flex;
+  align-self: flex-start;
+
+  margin-right: 10px;
   opacity:0.95;
   border: 5px solid black;
-  position: absolute;
-  margin: 10em 0 0 10em;
+}
+
+.projects-container{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .project{
   display: inline-block;
-  margin:20px;
+  flex-basis:30%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer{
+  border-top: 1px solid lightgray;
+  height: 3em;
+  align-items: center;
+  padding-left: 2em;
+}
+
+.icons{
+  color:blue;
+  font-size: 5em;
 }
